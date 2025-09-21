@@ -8,24 +8,24 @@
     <script src="script.js" defer></script>
 </head>
 <body class="flex flex-col justify-center items-center h-dvh w-full font-mono gap-8">
-    <h1 class="text-5xl font-extrabold">Number Guessing Game</h1>
+    <h1 class="md:text-5xl text-2xl font-extrabold">Number Guessing Game</h1>
     <div class="panel border-2 p-4 flex flex-col rounded-xl shadow-xl gap-4">
-        <label for="" class="text-3xl">
+        <label for="" class="md:text-3xl text-xl">
             Guess The Number:
         </label>
-        <input type="number" name="guess" id="guess" class="rounded-xl border-2 px-4 w-full text-2xl py-4">
-        <div class="level flex justify-center items-center gap-6">
-            <button id="new-game" class="transition duration-150 ease-in-out active:scale-75 bg-blue-500 w-max px-5 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer text-xl">New Game</button>
-            <button id="submit" class="transition duration-150 ease-in-out active:scale-75 bg-blue-500 w-max px-5 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer text-xl">Submit</button>
-            <button id="reset-game" class="transition duration-150 ease-in-out active:scale-75 bg-blue-500 w-max px-5 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer text-xl">Reset Game</button>
+        <input type="number" name="guess" id="guess" class="rounded-xl border-2 md:px-4 px-3 w-full md:text-2xl text-lg py-4">
+        <div class="flex justify-center items-center md:gap-6 gap-4 md:flex-row flex-col">
+            <button id="new-game" class="transition duration-150 ease-in-out active:scale-75 bg-blue-500 md:w-max w-full md:px-5 px-4 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer md:text-xl text-lg">New Game</button>
+            <button id="submit" class="transition duration-150 ease-in-out active:scale-75 bg-blue-500 md:w-max w-full md:px-5 px-4 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer md:text-xl text-lg">Submit</button>
+            <button id="reset-game" class="transition duration-150 ease-in-out active:scale-75 bg-blue-500 md:w-max w-full md:px-5 px-4 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer md:text-xl text-lg">Reset Game</button>
         </div>
-        <div id="message" class="border-2 h-15 p-5 rounded-2xl flex items-center whitespace-normal break-words"></div>
+        <div id="message" class="border-2 md:h-15 h-10 md:p-5 px-2 py-3 rounded-2xl flex items-center whitespace-normal break-words md:text-base text-sm"></div>
         <hr class="border-2 rounded-full">
-        <p class="text-2xl font-extrabold pl-3">Difficulty:</p>
-        <div class="level flex justify-between items-center px-4">
-            <button id="easy" class="difficulty transition duration-150 ease-in-out active:scale-75 bg-blue-500 w-max px-5 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer text-xl">Easy</button>
-            <button id="medium" class="difficulty transition duration-150 ease-in-out active:scale-75 bg-blue-500 w-max px-5 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer text-xl">Medium</button>
-            <button id="hard" class="difficulty transition duration-150 ease-in-out active:scale-75 bg-blue-500 w-max px-5 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer text-xl">Hard</button>
+        <p class="md:text-2xl text-lg font-extrabold pl-3">Difficulty:</p>
+        <div class=" md:flex-row flex-col level flex justify-between items-center px-4 gap-4">
+            <button id="easy" class="difficulty transition duration-150 ease-in-out active:scale-75 bg-blue-500 md:w-max w-full md:px-5 px-4 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer md:text-xl text-lg">Easy</button>
+            <button id="medium" class="difficulty transition duration-150 ease-in-out active:scale-75 bg-blue-500 md:w-max w-full md:px-5 px-4 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer md:text-xl text-lg">Medium</button>
+            <button id="hard" class="difficulty transition duration-150 ease-in-out active:scale-75 bg-blue-500 md:w-max w-full md:px-5 px-4 py-3 text-white self-center rounded-2xl shadow-xl cursor-pointer md:text-xl text-lg">Hard</button>
         </div>
     </div>
 </body>
